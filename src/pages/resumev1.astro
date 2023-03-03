@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { metaData } from '../../meta.config.ts'
+import BadResumeItem from '../components/BadResumeItem.tsx'
+const data = metaData()
+---
+
+<Layout title="ffxixslh's resume">
+  <div id="container" class="grid place-items-center px-16 py-8 bg-gray-100">
+    <div id="resume-container" class="flex flex-col w-full h-fit">
+      {
+        Object.entries(data).map(([_dataName, dataValue]) => {
+          return <BadResumeItem resumeValue={dataValue} />
+        })
+      }
+    </div>
+  </div>
+</Layout>
