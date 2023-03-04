@@ -7,7 +7,7 @@ import type {
   ProjectType,
   ResumeItem,
 } from '../common/typings/resume'
-import { resizeProjectText as resizeProjectText } from 'src/common/utils/resizeText'
+import { resizeProjectText as resizeProjectText } from 'src/common/utils/resizeProjectText'
 
 interface InfoBoxProps {
   item: ResumeItem
