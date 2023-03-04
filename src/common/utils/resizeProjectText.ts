@@ -23,9 +23,9 @@ export const resizeProjectText = (value: string) => {
       return 'text-lg'
 
     case projectKeys['projectContent']:
-      return 'text-base'
+      return 'text-sm'
 
     default:
-      return 'text-base'
+      return 'text-sm'
   }
 }
