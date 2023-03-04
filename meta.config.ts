@@ -5,7 +5,7 @@ export const metaData: () => ResumeData = () => {
     contact: {
       title: '联系方式',
       content: {
-        phone: { label: '电话: ', value: '13018414729' },
+        phone: { label: '电话: ', value: '130********' },
         email: { label: '邮箱: ', value: 'lhq12230@gmail.com' },
         site: { label: 'Github: ', value: 'github.com/ffxixslh' },
       },
@@ -58,7 +58,6 @@ export const metaData: () => ResumeData = () => {
         {
           projectTitle: '仿网易云音乐网页端项目（个人项目）',
           projectTechnology: [
-            'TypeScript',
             'Vite',
             'React',
             'Redux',
@@ -81,7 +80,7 @@ export const metaData: () => ResumeData = () => {
       title: '自我评价',
       content: [
         '喜欢学习、钻研前端技术，平时有阅读前端书籍，如红宝书、YDNJS 、犀牛书等；',
-        '经常上网冲浪，会去 StackOverflow / Github / 掘金 等平台了解前端趋势、学习大佬的编程技术；',
+        '经常去 StackOverflow / Github / 掘金 等平台了解前端趋势、学习编程技术；',
         '喜欢英语，能流利阅读英文文档，有良好的听说读写能力；',
         '在学习过程中会经常做笔记，并在博客分享学习到的知识；',
         '有较好的抗压能力，积极向上，善于交流，刻苦耐劳；',
