@@ -7,21 +7,25 @@ type ProjectKeys = {
 const projectKeys: ProjectKeys = {
   projectTitle: 'projectTitle',
   projectIntro: 'projectIntro',
+  projectTechnology: 'projectTechnology',
   projectContent: 'projectContent',
 }
 
 export const resizeProjectText = (value: string) => {
   switch (value) {
     case projectKeys['projectTitle']:
-      return 'text-lg'
+      return 'text-lg font-medium'
 
     case projectKeys['projectIntro']:
-      return 'text-md'
+      return 'text-sm mb-2'
+
+    case projectKeys['projectTechnology']:
+      return 'text-lg'
 
     case projectKeys['projectContent']:
-      return 'text-md'
+      return 'text-base'
 
     default:
-      return 'text-md'
+      return 'text-base'
   }
 }

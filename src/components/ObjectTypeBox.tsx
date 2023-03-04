@@ -25,7 +25,7 @@ const ObjectTypeBox = (props: InfoBoxProps) => {
             <div class="my-1">
               {Object.entries(ov).map(([ik, iv]) => {
                 return ik !== 'label' ? (
-                  <>{useHighlight(iv, 'info')}</>
+                  <>{useHighlight(iv, colorKind)}</>
                 ) : (
                   <>{iv}</>
                 )

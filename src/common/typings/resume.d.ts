@@ -11,6 +11,7 @@ export type ObjectWithLabelType<T> = {
 
 export type ProjectType = {
   projectTitle: string
+  projectTechnology: string[]
   projectIntro: string
   projectContent: string[]
 }

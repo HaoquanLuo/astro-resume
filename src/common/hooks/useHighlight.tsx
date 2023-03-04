@@ -4,10 +4,10 @@ export type ColorKind = keyof typeof colorSet
 
 export const colorSet = {
   primary: 'text-gray-600 font-sans font-normal',
-  highlight: 'text-yellow-500 font-serif font-medium',
+  highlight: 'text-yellow-600 font-serif font-medium',
   keyword: 'text-orange-600 font-mono font-semibold',
-  important: 'text-red-500 font-bold',
-  info: 'text-blue-500 font-normal',
+  important: 'text-red-600 font-bold',
+  info: 'text-blue-600 font-normal',
 }
 
 /**
@@ -24,7 +24,7 @@ export const useHighlight = (value: string, kind?: ColorKind) => {
   // 0. 在每个 word 的前后用空格将其分隔
   // 1. 搜索 word 放入 keywords
   // 2. 遍历 keywords 替换 word ，存入 result 数组中
-  const keywordValidator = new RegExp('([a-zA-Z0-9]+)([.@/][a-zA-Z]+)*', 'g')
+  const keywordValidator = new RegExp('([a-zA-Z0-9]+)([.@/-][a-zA-Z]+)*', 'g')
   const matchRaws = value.matchAll(keywordValidator)
   const keywords: string[] = []
 
@@ -48,7 +48,7 @@ export const useHighlight = (value: string, kind?: ColorKind) => {
     // 打平重组
     // e.g. [ <span>...</span>, front, <span>...</span> , end ]
     const flatStr = splitStr.flatMap((token) => [
-      <span class={`align-middle text-lg ${color}`}>{keyword}</span>,
+      <span class={`align-middle text-base ${color}`}>{keyword}</span>,
       token,
     ])
     // 截取正确部分，从数组下标为 '1' 处开始
