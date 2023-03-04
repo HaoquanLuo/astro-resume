@@ -3,8 +3,8 @@ import { metaData } from '../../meta.config'
 import ResumeItem from './ResumeItem.tsx'
 import ObjectTypeBox from './ObjectTypeBox.tsx'
 import ArrayTypeBox from './ArrayTypeBox.tsx'
-import useIcon from 'src/common/hooks/useIcon.tsx'
-import type { IconKey } from 'src/common/hooks/useIcon.tsx'
+import useIcon from 'src/hooks/useIcon.tsx'
+import type { IconKey } from 'src/hooks/useIcon.tsx'
 
 interface ResumeContainerProps {}
 

@@ -1,5 +1,5 @@
-import { useHighlight } from 'src/common/hooks/useHighlight'
-import type { ColorKind } from 'src/common/hooks/useHighlight'
+import { useHighlight } from 'src/hooks/useHighlight'
+import type { ColorKind } from 'src/hooks/useHighlight'
 import type {
   ArrayType,
   ContactType,
@@ -8,7 +8,7 @@ import type {
   ResumeItem,
 } from '../common/typings/resume'
 import { resizeProjectText as resizeProjectText } from 'src/common/utils/resizeProjectText'
-import useIcon from 'src/common/hooks/useIcon'
+import useIcon from 'src/hooks/useIcon'
 
 interface InfoBoxProps {
   item: ResumeItem

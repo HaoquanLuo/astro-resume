@@ -1,4 +1,4 @@
-import { useHighlight, type ColorKind } from 'src/common/hooks/useHighlight'
+import { useHighlight, type ColorKind } from 'src/hooks/useHighlight'
 import type {
   ContactType,
   InfoType,
