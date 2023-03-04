@@ -11,12 +11,14 @@ export type ObjectWithLabelType<T> = {
 
 export type ProjectType = {
   projectTitle: string
+  projectIntro: string
   projectContent: string[]
 }
 
 export type ContactType = {
-  phone: number
+  phone: string
   email: string
+  site: string
 }
 
 export type InfoType = {
@@ -24,7 +26,6 @@ export type InfoType = {
   degree: string
   college: string
   major: string
-  site: string
 }
 
 export type ResumeItemContent =

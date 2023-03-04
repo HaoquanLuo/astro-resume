@@ -10,7 +10,7 @@ const ResumeItem = (props: ResumeItemProps) => {
   const { children } = props
 
   return (
-    <div class="w-full rounded-lg bg-gray-200 px-6 py-4 text-black">
+    <div class="w-full rounded-lg bg-gray-200 px-5 py-4 text-black">
       {children}
     </div>
   )
