@@ -30,15 +30,11 @@ const useIcon = (iconName: IconKey, size: SizeKey = 'md') => {
 
   return (
     <div
-      class="relative"
+      class={`relative h-${sizeSet[size]} mx-2`}
       onMouseEnter={() => setShowTips((prev) => !prev)}
       onMouseLeave={() => setShowTips((prev) => !prev)}
     >
-      <img
-        class={`h-${sizeSet[size]} mx-2`}
-        src={iconPath}
-        alt={`icon-${iconName}`}
-      />
+      <img height={'100%'} src={iconPath} alt={`icon-${iconName}`} />
       {showTips() && (
         <div class="absolute w-fit px-1 -translate-x-1/2 -top-8 left-1/2 right-0 text-sm text-white bg-black bg-opacity-60 rounded">
           {iconName}
