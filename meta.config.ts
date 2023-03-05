@@ -37,6 +37,7 @@ export const metaData: () => ResumeData = () => {
         {
           projectTitle: '基于 WebRTC 的实时音视频通讯项目（个人毕设项目）',
           projectTechnology: [
+            'vite',
             'TypeScript',
             'React',
             'Redux',
