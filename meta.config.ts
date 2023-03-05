@@ -5,7 +5,7 @@ export const metaData: () => ResumeData = () => {
     contact: {
       title: '联系方式',
       content: {
-        phone: { label: '电话: ', value: '130********' },
+        phone: { label: '电话: ', value: '13018414729' },
         email: { label: '邮箱: ', value: 'lhq12230@gmail.com' },
         site: { label: 'Github: ', value: 'github.com/ffxixslh' },
       },
