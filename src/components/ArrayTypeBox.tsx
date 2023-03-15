@@ -31,7 +31,7 @@ const ArrayTypeBox = (props: InfoBoxProps) => {
 
           if (ov instanceof Object) {
             return (
-              <div class="mb-4">
+              <div class="mb-6">
                 {Object.entries(ov).map(([ik, iv]) => {
                   if (typeof iv === 'string') {
                     return (
