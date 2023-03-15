@@ -15,6 +15,9 @@ const iconSet = {
   Solid: 'svgs/Solid.svg',
   TypeScript: 'svgs/TypeScript.svg',
   Vite: 'svgs/Vite.svg',
+  Vue: 'svgs/Vue.svg',
+  Axios: 'svgs/Axios.svg',
+  Element: 'svgs/Element.svg',
 }
 
 const sizeSet = {
