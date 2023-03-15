@@ -75,6 +75,18 @@ export const metaData: () => ResumeData = () => {
             '4. 使用 Vite 快速搭建开发环境和代码管理',
           ],
         },
+        {
+          projectTitle: '校园博客项目及后台管理系统（课设项目）',
+          projectTechnology: ['Vite', 'Vue', 'Axios', 'Element', 'Sass'],
+          projectIntro:
+            '该项目是本人学习软件工程课时完成的课设项目，该项目主要实现了校园内交友、发博客等功能，让用户可以通过首页推荐的帖子来寻找志趣相投的朋友；项目还集成了交友广场、资源共享、权限管理和后台管理等功能',
+          projectContent: [
+            '1. 使用 Vue 全家桶开发，使用组件化开发思想抽离共用的功能模块',
+            '2. 采用 VueX 进行状态管理，用 Vue-Router 进行路由开发，采用路由懒加载优化性能',
+            '3. 样式主要采用 Element-plus 库进行编写，部分采用 Sass 进行模块化编写',
+            '4. 使用 Vite 快速搭建开发环境和项目打包上线',
+          ],
+        },
       ],
     },
     evaluation: {
