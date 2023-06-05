@@ -1,53 +1,51 @@
 export type PrimitiveType = string | number
 
-export type ArrayType<T> = Array<T>
-
-export type ObjectWithLabelType<T> = {
+export type TObjectWithLabel<T> = {
   [K in keyof T]: {
     label: string
     value: T[K]
   }
 }
 
-export type ProjectType = {
+export type TProject = {
   projectTitle: string
   projectTechnology: string[]
   projectIntro: string
   projectContent: string[]
 }
 
-export type ContactType = {
+export type TContact = {
   phone: string
   email: string
   site: string
 }
 
-export type InfoType = {
+export type TInfo = {
   name: string
   degree: string
   college: string
   major: string
 }
 
-export type ResumeItemContent =
+export type TResumeItemContent =
   | PrimitiveType
-  | ArrayType<string>
-  | ArrayType<ProjectType>
-  | ObjectWithLabelType<ContactType>
-  | ObjectWithLabelType<InfoType>
+  | Array<string>
+  | Array<TProject>
+  | TObjectWithLabel<TContact>
+  | TObjectWithLabel<TInfo>
 
-export type ResumeItem = {
+export type TResumeItem = {
   title: string
-  content: ResumeItemContent
+  content: TResumeItemContent
 }
 
-export type ResumeItemTitle =
+export type TResumeItemTitle =
   | 'contact'
   | 'info'
   | 'skills'
   | 'projects'
   | 'evaluation'
 
-export type ResumeData = {
-  [title in ResumeItemTitle]: ResumeItem
+export type TResumeData = {
+  [title in TResumeItemTitle]: TResumeItem
 }

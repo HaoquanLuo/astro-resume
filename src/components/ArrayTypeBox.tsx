@@ -2,16 +2,16 @@ import { useHighlight } from 'src/hooks/useHighlight'
 import type { ColorKind } from 'src/hooks/useHighlight'
 import type {
   ArrayType,
-  ContactType,
-  ObjectWithLabelType,
-  ProjectType,
-  ResumeItem,
+  TContact,
+  TObjectWithLabel,
+  TProject,
+  TResumeItem,
 } from '../common/typings/resume'
 import { resizeProjectText as resizeProjectText } from 'src/common/utils/resizeProjectText'
 import useIcon from 'src/hooks/useIcon'
 
 interface InfoBoxProps {
-  item: ResumeItem
+  item: TResumeItem
   colorKind?: ColorKind
 }
 
@@ -22,7 +22,7 @@ const ArrayTypeBox = (props: InfoBoxProps) => {
     <>
       <div class="font-semibold text-2xl mb-3">{item.title}</div>
       <div class="flex flex-col">
-        {(item.content as ArrayType<ProjectType | string>).map((ov) => {
+        {(item.content as ArrayType<TProject | string>).map((ov) => {
           if (typeof ov === 'string') {
             return (
               <div class="m-0.5 text-sm">{useHighlight(ov, colorKind)}</div>

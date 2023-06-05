@@ -1,6 +1,6 @@
-import type { ResumeData } from './src/common/typings/resume'
+import type { TResumeData } from './src/common/typings/resume'
 
-export const metaData: () => ResumeData = () => {
+export const metaData: () => TResumeData = () => {
   return {
     contact: {
       title: '联系方式',
@@ -37,13 +37,14 @@ export const metaData: () => ResumeData = () => {
         {
           projectTitle: '基于 WebRTC 的实时音视频通讯项目（个人毕设项目）',
           projectTechnology: [
-            'Vite',
             'TypeScript',
+            'Vite',
             'React',
             'Redux',
             'ReactRouter',
             'NodeJS',
             'SocketIO',
+            'UnoCSS',
           ],
           projectIntro:
             '该项目是本人的毕业设计，全面使用 React.FC + TypeScript 进行编写，前端样式主要用 UnoCSS 编写，其次用 AntDesign 5 来实现一些弹窗功能等，此外，自己也封装了一些样式组件和 hooks 来复用代码和逻辑。项目主要实现了实时音视频通话、文本信息传输、屏幕共享和用户私聊等功能。',

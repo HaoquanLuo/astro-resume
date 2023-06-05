@@ -9,6 +9,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "ignoreDeprecations": "5.0"
   }
 }

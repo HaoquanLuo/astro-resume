@@ -1,22 +1,21 @@
-import type { JSXElement } from 'solid-js'
 import { metaData } from '../../meta.config'
-import ResumeItem from './ResumeItem.tsx'
-import ObjectTypeBox from './ObjectTypeBox.tsx'
+import ResumeInfoBox from './ResumeInfoBox.tsx'
 import ArrayTypeBox from './ArrayTypeBox.tsx'
 import useIcon from 'src/hooks/useIcon.tsx'
 import type { IconKey } from 'src/hooks/useIcon.tsx'
+import ResumeItemBox from './ResumeItemBox.tsx'
 
 interface ResumeContainerProps {}
 
 const ResumeContainer = (props: ResumeContainerProps) => {
   const resumeData = metaData()
 
-  const iconRenderer = (icons: IconKey[]) => {
-    return icons.map((iconName) => <>{useIcon(iconName, 'xl')}</>)
-  }
-
   const ResumeFooter = () => {
-    const icons = ['Astro', 'Solid']
+    const icons: IconKey[] = ['Astro', 'Solid']
+
+    const iconRenderer = (icons: IconKey[]) => {
+      return icons.map((iconName) => <>{useIcon(iconName, 'xl')}</>)
+    }
 
     return (
       <div class="flex gap-1 justify-center items-center h-fit">
@@ -34,22 +33,22 @@ const ResumeContainer = (props: ResumeContainerProps) => {
   return (
     <div class="flex flex-col w-full h-fit gap-5">
       <div class="flex w-full h-fit gap-5">
-        <ResumeItem>
-          <ObjectTypeBox item={resumeData.contact} colorKind="info" />
-        </ResumeItem>
-        <ResumeItem>
-          <ObjectTypeBox item={resumeData.info} colorKind="primary" />
-        </ResumeItem>
+        <ResumeItemBox>
+          <ResumeInfoBox item={resumeData.contact} colorKind="info" />
+        </ResumeItemBox>
+        <ResumeItemBox>
+          <ResumeInfoBox item={resumeData.info} colorKind="primary" />
+        </ResumeItemBox>
       </div>
-      <ResumeItem>
+      <ResumeItemBox>
         <ArrayTypeBox item={resumeData.skills} colorKind="keyword" />
-      </ResumeItem>
-      <ResumeItem>
+      </ResumeItemBox>
+      <ResumeItemBox>
         <ArrayTypeBox item={resumeData.projects} colorKind="highlight" />
-      </ResumeItem>
-      <ResumeItem>
+      </ResumeItemBox>
+      <ResumeItemBox>
         <ArrayTypeBox item={resumeData.evaluation} colorKind="important" />
-      </ResumeItem>
+      </ResumeItemBox>
       <ResumeFooter />
     </div>
   )

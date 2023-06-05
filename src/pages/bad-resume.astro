@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { metaData } from '../../meta.config.ts'
-import BadResumeItem from '../components/BadResumeItem.tsx'
+import { metaData } from '../../meta.config.js'
+import { Fragment } from 'astro/dist/runtime/server';
+import BadResumeItem from 'src/components/BadExamples/BadResumeItem';
 const data = metaData()
 ---
 

@@ -1,8 +1,8 @@
 import type { JSX } from 'solid-js/jsx-runtime'
-import type { ResumeItem } from '../common/typings/resume.d.ts'
+import type { TResumeItem } from '../../common/typings/resume'
 
 export interface ResumeItemProps {
-  resumeValue: ResumeItem
+  resumeValue: TResumeItem
 }
 
 const BadResumeItem = (props: ResumeItemProps) => {

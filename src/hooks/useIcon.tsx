@@ -1,24 +1,8 @@
 import { createSignal } from 'solid-js'
+import { iconSet } from 'src/common/constant/icons'
 
 export type IconKey = keyof typeof iconSet
 export type SizeKey = keyof typeof sizeSet
-
-const iconSet = {
-  AntDesign: 'svgs/AntDesign.svg',
-  Astro: 'svgs/Astro.svg',
-  NodeJS: 'svgs/NodeJS.svg',
-  React: 'svgs/React.svg',
-  ReactRouter: 'svgs/ReactRouter.svg',
-  Redux: 'svgs/Redux.svg',
-  Sass: 'svgs/Sass.svg',
-  SocketIO: 'svgs/SocketIO.svg',
-  Solid: 'svgs/Solid.svg',
-  TypeScript: 'svgs/TypeScript.svg',
-  Vite: 'svgs/Vite.svg',
-  Vue: 'svgs/Vue.svg',
-  Axios: 'svgs/Axios.svg',
-  Element: 'svgs/Element.svg',
-}
 
 const sizeSet = {
   sm: 3.5,

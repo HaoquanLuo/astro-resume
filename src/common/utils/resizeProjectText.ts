@@ -1,7 +1,7 @@
-import type { ProjectType } from 'src/common/typings/resume.d.ts'
+import type { TProject } from 'src/common/typings/resume.d.ts'
 
 type ProjectKeys = {
-  [K in keyof ProjectType]: K
+  [K in keyof TProject]: K
 }
 
 const projectKeys: ProjectKeys = {
